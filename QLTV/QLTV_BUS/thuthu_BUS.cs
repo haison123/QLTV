@@ -9,6 +9,7 @@ using QLTV_DTO;
 
 namespace QLTV_BUS
 {
+    //
     public class thuthu_BUS
     {
         thuthu_DAL tt_dal = new thuthu_DAL();

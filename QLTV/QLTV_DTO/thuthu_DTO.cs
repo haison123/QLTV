@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QLTV_DTO
 {
+    //Xây dựng lớp thủ thư với các thuộc tính sau
     public class thuthu_DTO
     {
         public string matt { get; set; }
