@@ -8,6 +8,7 @@ using System.Data;
 
 namespace QLTV_DAL
 {
+    //Thực hiện truy vấn tới data base
     public class thuthu_DAL:connect_DAL
     {
         public DataTable loadthuthu()
