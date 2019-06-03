@@ -1,0 +1,9 @@
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DAL.dll
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DAL.pdb
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DTO.dll
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DTO.pdb
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.csproj.CopyComplete
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.dll
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.pdb

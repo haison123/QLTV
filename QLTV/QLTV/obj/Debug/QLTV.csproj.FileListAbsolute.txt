@@ -1,0 +1,13 @@
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.frm_main.resources
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.cache
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.CopyComplete
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
