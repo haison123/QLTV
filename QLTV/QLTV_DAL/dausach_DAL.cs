@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using QLTV_DTO;
 
-
+///hồ thị giang nhận phân công
 namespace QLTV_DAL 
 {
     public class dausach_DAL : connect_DAL

@@ -7,6 +7,7 @@ using System.Data;
 using QLTV_DAL;
 using QLTV_DTO;
 
+///Hồ thị giang nhận phân công
 namespace QLTV_BUS
 {
     public class dausach_BUS
