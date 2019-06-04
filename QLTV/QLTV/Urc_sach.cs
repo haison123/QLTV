@@ -15,6 +15,8 @@ namespace QLTV
     public partial class Urc_sach : UserControl
     {
         sach_BUS s_bus = new sach_BUS();
+        dausach_BUS ds_bus = new dausach_BUS();
+       
         public Urc_sach()
         {
             InitializeComponent();
@@ -23,12 +25,16 @@ namespace QLTV
         private void Urc_sach_Load(object sender, EventArgs e)
         {
             dtgw_s.DataSource = s_bus.getlist();
+
+            cbb_ds.DataSource = ds_bus.getlist();
+            cbb_ds.DisplayMember = "MaDS";
+            cbb_ds.ValueMember = "MaDS";
         }
 
         private void btn_s_t_Click(object sender, EventArgs e)
         {
             sach_DTO s = new sach_DTO();
-            s.mads = txb_s_mds.Text;
+            s.mads = cbb_ds.SelectedValue.ToString();
             s.mas = txb_s_ms.Text;
             s.tinhtrang = txb_s_tt.Text;
             int check = s_bus.them(s);
@@ -55,7 +61,6 @@ namespace QLTV
             {
                 MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            txb_s_mds.Text = "";
             txb_s_ms.Text = "";
             txb_s_tt.Text = "";
         }
@@ -63,10 +68,10 @@ namespace QLTV
         private void btn_s_s_Click(object sender, EventArgs e)
         {
             sach_DTO s = new sach_DTO();
-            s.mads = txb_s_mds.Text;
+            s.mads = cbb_ds.SelectedValue.ToString(); 
             s.mas = txb_s_ms.Text;
             s.tinhtrang = txb_s_tt.Text;
-            int check = s_bus.them(s);
+            int check = s_bus.sua(s);
             try
             {
                 if (check == 0)
@@ -90,7 +95,6 @@ namespace QLTV
             {
                 MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            txb_s_mds.Text = "";
             txb_s_ms.Text = "";
             txb_s_tt.Text = "";
         }

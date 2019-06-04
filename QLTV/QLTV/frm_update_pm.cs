@@ -19,6 +19,7 @@ namespace QLTV
         sach_BUS s_BUS = new sach_BUS();
         phieumuon_BUS pm_bus = new phieumuon_BUS();
         ctpm_BUS ct_bus = new ctpm_BUS();
+        string[] sach = new string[100];
         public frm_update_pm()
         {
             InitializeComponent();
@@ -44,8 +45,10 @@ namespace QLTV
                 for (int i = 0; i < ct_bus.getlist_CTPM(txb_pm_mpm.Text).Rows.Count; i++)
                 {
                     listBox2.Items.Add(ct_bus.getlist_CTPM(txb_pm_mpm.Text).Rows[i][1].ToString());
+                    sach[0]= ct_bus.getlist_CTPM(txb_pm_mpm.Text).Rows[i][1].ToString();
                 }
             }
+            
         }
 
         private void frm_update_pm_Load(object sender, EventArgs e)
@@ -108,9 +111,9 @@ namespace QLTV
         {
             phieumuon_DTO pm = new phieumuon_DTO();
             pm.mapm = txb_pm_mpm.Text;
-            for (int i = 0; i < listBox1.Items.Count; i++)
+            for (int i = 0; i < sach.Length ; i++)
             {
-                s_BUS.sua_trangthai2(listBox1.Items[i].ToString());
+                s_BUS.sua_trangthai2(sach[i]);
             }
             pm_bus.xoa(pm);
 
@@ -173,13 +176,12 @@ namespace QLTV
             {
                 s_BUS.sua_trangthai2(listBox2.Items[i].ToString());
             }
-            for (int i = 0; i < listBox1.Items.Count; i++)
-            {
-                s_BUS.sua_trangthai2(listBox1.Items[i].ToString());
-            }
+           
             pm_bus.xoa(pm);
             MessageBox.Show("Trả sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
+
+        
     }
     
 }

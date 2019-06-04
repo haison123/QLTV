@@ -124,6 +124,12 @@
     <Compile Include="Urc_sach.Designer.cs">
       <DependentUpon>Urc_sach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Urc_ThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Urc_ThongKe.Designer.cs">
+      <DependentUpon>Urc_ThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Urc_thuthu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Urc_sach.resx">
       <DependentUpon>Urc_sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urc_ThongKe.resx">
+      <DependentUpon>Urc_ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Urc_thuthu.resx">
       <DependentUpon>Urc_thuthu.cs</DependentUpon>

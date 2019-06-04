@@ -12,7 +12,28 @@ namespace QLTV_DAL
 {
     public class dausach_DAL : connect_DAL
     {
-        
+
+        public DataTable thongke_tacgia(string tg)
+        {
+            string sql = @" SELECT TacGia,TenDS,MaDS,LinhVuc,NXB,NgayXB FROM dbo.Dau_Sach  WHERE TacGia = N'"+tg+"'";
+            return getdata(sql);
+        }
+        public DataTable thongke_nxb(string nxb)
+        {
+            string sql = @" SELECT NXB,TenDS,MaDS,LinhVuc,TacGia,NgayXB FROM dbo.Dau_Sach  WHERE NXB = N'" + nxb + "'";
+            return getdata(sql);
+        }
+
+        public DataTable load_tacgia()
+        {
+            string sql = @"SELECT TacGia FROM dbo.Dau_Sach GROUP BY TacGia";
+            return getdata(sql);
+        }
+        public DataTable load_nxb()
+        {
+            string sql = @"SELECT NXB FROM dbo.Dau_Sach GROUP BY NXB";
+            return getdata(sql);
+        }
         public DataTable loaddausach()
         {
             string sqlstring= @"select * from Dau_Sach";

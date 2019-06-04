@@ -11,6 +11,12 @@ namespace QLTV_DAL
 {
     public class sach_DAL: connect_DAL
     {
+        public DataTable load_top5()
+        {
+            string sqlstring = @"SELECT TOP 5 WITH TIES ds.TenDS,s.MaSach,ds.TacGia,ds.LinhVuc,ds.NXB,ds.NgayXB,s.SoLuotMuon FROM dbo.Sach s,dbo.Dau_Sach ds WHERE s.MaDS = ds.MaDS ORDER BY s.SoLuotMuon DESC";
+            return getdata(sqlstring);
+
+        }
         public DataTable loadsachtheoPM(string pm)
         {
             string sqlstring = @"SELECT s.MaDS , ds.TenDS , s.MaSach , s.TinhTrang , s.TrangThai FROM dbo.CTPM ct,dbo.Sach s, dbo.Dau_Sach ds , dbo.Phieu_Muon pm WHERE ct.MaPM = pm.MaPM AND ct.MaSach = s.MaSach AND s.MaDS =ds.MaDS AND pm.MaPM = N'" + pm + "'";

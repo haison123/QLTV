@@ -95,5 +95,11 @@ namespace QLTV
             pal_main.Controls.Clear();
             pal_main.Controls.Add(new Urc_thuthu());
         }
+
+        private void btn_thongke_Click(object sender, EventArgs e)
+        {
+            pal_main.Controls.Clear();
+            pal_main.Controls.Add(new Urc_ThongKe());
+        }
     }
 }

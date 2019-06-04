@@ -12,7 +12,22 @@ namespace QLTV_BUS
     public class dausach_BUS
     {
         dausach_DAL ds_dal = new dausach_DAL();
-
+        public DataTable thongke_tacgia(string tg)
+        {
+            return ds_dal.thongke_tacgia(tg);
+        }
+        public DataTable thongke_nxb(string nxb)
+        {
+            return ds_dal.thongke_nxb(nxb);
+        }
+        public DataTable get_tacgia()
+        {
+            return ds_dal.load_tacgia();
+        }
+        public DataTable get_NXB()
+        {
+            return ds_dal.load_nxb();
+        }
         public DataTable getlist()
         {
             return ds_dal.loaddausach();

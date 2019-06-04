@@ -29,3 +29,4 @@ C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.frm_acc_xoatk.resources
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.frm_update_pm.resources
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.frm_show_ctpm.resources
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.Urc_thuthu.resources
+C:\Users\Dell\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.Urc_ThongKe.resources

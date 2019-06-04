@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel6 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar4 = new DevComponents.DotNetBar.RibbonBar();
+            this.btn_thongke = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
             this.btn_ql_tt = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar17 = new DevComponents.DotNetBar.RibbonBar();
@@ -137,6 +139,7 @@
             // ribbonPanel6
             // 
             this.ribbonPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonPanel6.Controls.Add(this.ribbonBar4);
             this.ribbonPanel6.Controls.Add(this.ribbonBar3);
             this.ribbonPanel6.Controls.Add(this.ribbonBar17);
             this.ribbonPanel6.Controls.Add(this.ribbonBar20);
@@ -160,6 +163,45 @@
             // 
             this.ribbonPanel6.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel6.TabIndex = 4;
+            // 
+            // ribbonBar4
+            // 
+            this.ribbonBar4.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar4.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar4.ContainerControlProcessDialogKey = true;
+            this.ribbonBar4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btn_thongke});
+            this.ribbonBar4.Location = new System.Drawing.Point(503, 0);
+            this.ribbonBar4.Name = "ribbonBar4";
+            this.ribbonBar4.Size = new System.Drawing.Size(100, 95);
+            this.ribbonBar4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonBar4.TabIndex = 10;
+            this.ribbonBar4.Text = "Thống kê";
+            // 
+            // 
+            // 
+            this.ribbonBar4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar4.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // btn_thongke
+            // 
+            this.btn_thongke.Image = ((System.Drawing.Image)(resources.GetObject("btn_thongke.Image")));
+            this.btn_thongke.ImageFixedSize = new System.Drawing.Size(70, 60);
+            this.btn_thongke.Name = "btn_thongke";
+            this.btn_thongke.SubItemsExpandWidth = 14;
+            this.btn_thongke.Text = "buttonItem1";
+            this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
             // 
             // ribbonBar3
             // 
@@ -1077,14 +1119,14 @@
             this.pal_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pal_main.Location = new System.Drawing.Point(5, 155);
             this.pal_main.Name = "pal_main";
-            this.pal_main.Size = new System.Drawing.Size(872, 237);
+            this.pal_main.Size = new System.Drawing.Size(872, 231);
             this.pal_main.TabIndex = 1;
             // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 394);
+            this.ClientSize = new System.Drawing.Size(882, 388);
             this.Controls.Add(this.pal_main);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1160,6 +1202,8 @@
         private System.Windows.Forms.Panel pal_main;
         private DevComponents.DotNetBar.RibbonBar ribbonBar3;
         private DevComponents.DotNetBar.ButtonItem btn_ql_tt;
+        private DevComponents.DotNetBar.RibbonBar ribbonBar4;
+        private DevComponents.DotNetBar.ButtonItem btn_thongke;
     }
 }
 

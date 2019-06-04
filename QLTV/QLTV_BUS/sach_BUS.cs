@@ -13,6 +13,10 @@ namespace QLTV_BUS
     {
         sach_DAL s_dal = new sach_DAL();
 
+        public DataTable get_top5()
+        {
+            return s_dal.load_top5();
+        }
         public DataTable getlist_PM(string pm)
         {
             return s_dal.loadsachtheoPM(pm);
@@ -41,7 +45,7 @@ namespace QLTV_BUS
                 return 0;
             if (s_dal.checkDS(s) == false)
                 return 2;
-            if (s_dal.suasach(s))
+            if (s_dal.suasach(s) == false)
                 return -1;
             return 1;
         }

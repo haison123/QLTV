@@ -37,7 +37,6 @@
             this.btn_s_s = new System.Windows.Forms.Button();
             this.btn_s_x = new System.Windows.Forms.Button();
             this.btn_s_t = new System.Windows.Forms.Button();
-            this.txb_s_mds = new System.Windows.Forms.TextBox();
             this.label_s1 = new System.Windows.Forms.Label();
             this.pnl_s2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dtgw_s = new System.Windows.Forms.DataGridView();
@@ -45,6 +44,7 @@
             this.btn_s_tkt = new System.Windows.Forms.Button();
             this.btn_s_tkm = new System.Windows.Forms.Button();
             this.txb_s_tk = new System.Windows.Forms.TextBox();
+            this.cbb_ds = new System.Windows.Forms.ComboBox();
             this.panel_s1.SuspendLayout();
             this.pnl_s2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_s)).BeginInit();
@@ -53,6 +53,7 @@
             // 
             // panel_s1
             // 
+            this.panel_s1.Controls.Add(this.cbb_ds);
             this.panel_s1.Controls.Add(this.label_s4);
             this.panel_s1.Controls.Add(this.label_s3);
             this.panel_s1.Controls.Add(this.label_s2);
@@ -61,7 +62,6 @@
             this.panel_s1.Controls.Add(this.btn_s_s);
             this.panel_s1.Controls.Add(this.btn_s_x);
             this.panel_s1.Controls.Add(this.btn_s_t);
-            this.panel_s1.Controls.Add(this.txb_s_mds);
             this.panel_s1.Controls.Add(this.label_s1);
             this.panel_s1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_s1.Location = new System.Drawing.Point(0, 0);
@@ -140,13 +140,6 @@
             this.btn_s_t.UseVisualStyleBackColor = true;
             this.btn_s_t.Click += new System.EventHandler(this.btn_s_t_Click);
             // 
-            // txb_s_mds
-            // 
-            this.txb_s_mds.Location = new System.Drawing.Point(139, 151);
-            this.txb_s_mds.Name = "txb_s_mds";
-            this.txb_s_mds.Size = new System.Drawing.Size(216, 20);
-            this.txb_s_mds.TabIndex = 1;
-            // 
             // label_s1
             // 
             this.label_s1.AutoSize = true;
@@ -212,6 +205,14 @@
             this.txb_s_tk.Size = new System.Drawing.Size(364, 20);
             this.txb_s_tk.TabIndex = 0;
             // 
+            // cbb_ds
+            // 
+            this.cbb_ds.FormattingEnabled = true;
+            this.cbb_ds.Location = new System.Drawing.Point(139, 151);
+            this.cbb_ds.Name = "cbb_ds";
+            this.cbb_ds.Size = new System.Drawing.Size(216, 21);
+            this.cbb_ds.TabIndex = 14;
+            // 
             // Urc_sach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,7 +244,6 @@
         private System.Windows.Forms.Button btn_s_s;
         private System.Windows.Forms.Button btn_s_x;
         private System.Windows.Forms.Button btn_s_t;
-        private System.Windows.Forms.TextBox txb_s_mds;
         private System.Windows.Forms.Label label_s1;
         private System.Windows.Forms.FlowLayoutPanel pnl_s2;
         private System.Windows.Forms.DataGridView dtgw_s;
@@ -251,5 +251,6 @@
         private System.Windows.Forms.Button btn_s_tkt;
         private System.Windows.Forms.Button btn_s_tkm;
         private System.Windows.Forms.TextBox txb_s_tk;
+        private System.Windows.Forms.ComboBox cbb_ds;
     }
 }
