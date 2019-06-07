@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Urc_phieumuon));
             this.panel_pm1 = new System.Windows.Forms.Panel();
             this.btn_pm_s = new System.Windows.Forms.Button();
             this.btn_pm_x = new System.Windows.Forms.Button();
@@ -39,63 +40,72 @@
             this.btn_pm_tk = new System.Windows.Forms.Button();
             this.btn_pm_ct = new System.Windows.Forms.Button();
             this.pnl_ds3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_pm1.SuspendLayout();
             this.pnl_pm2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_pm)).BeginInit();
             this.pnl_ds3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_pm1
             // 
+            this.panel_pm1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_pm1.BackgroundImage")));
             this.panel_pm1.Controls.Add(this.btn_pm_s);
             this.panel_pm1.Controls.Add(this.btn_pm_x);
             this.panel_pm1.Controls.Add(this.btn_pm_t);
-            this.panel_pm1.Controls.Add(this.label_pm1);
+            this.panel_pm1.Controls.Add(this.panel1);
             this.panel_pm1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_pm1.Location = new System.Drawing.Point(0, 0);
             this.panel_pm1.Name = "panel_pm1";
-            this.panel_pm1.Size = new System.Drawing.Size(373, 707);
+            this.panel_pm1.Size = new System.Drawing.Size(384, 707);
             this.panel_pm1.TabIndex = 1;
             // 
             // btn_pm_s
             // 
+            this.btn_pm_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_s.Image")));
             this.btn_pm_s.Location = new System.Drawing.Point(107, 301);
             this.btn_pm_s.Name = "btn_pm_s";
             this.btn_pm_s.Size = new System.Drawing.Size(169, 81);
             this.btn_pm_s.TabIndex = 3;
             this.btn_pm_s.Text = "Sửa/ Trả sách";
+            this.btn_pm_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_pm_s.UseVisualStyleBackColor = true;
             this.btn_pm_s.Click += new System.EventHandler(this.btn_pm_s_Click);
             // 
             // btn_pm_x
             // 
+            this.btn_pm_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_x.Image")));
             this.btn_pm_x.Location = new System.Drawing.Point(107, 429);
             this.btn_pm_x.Name = "btn_pm_x";
             this.btn_pm_x.Size = new System.Drawing.Size(169, 81);
             this.btn_pm_x.TabIndex = 4;
             this.btn_pm_x.Text = "Xem chi tiết";
+            this.btn_pm_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_pm_x.UseVisualStyleBackColor = true;
             this.btn_pm_x.Click += new System.EventHandler(this.btn_pm_x_Click);
             // 
             // btn_pm_t
             // 
+            this.btn_pm_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_t.Image")));
             this.btn_pm_t.Location = new System.Drawing.Point(107, 168);
             this.btn_pm_t.Name = "btn_pm_t";
             this.btn_pm_t.Size = new System.Drawing.Size(169, 81);
             this.btn_pm_t.TabIndex = 2;
             this.btn_pm_t.Text = "Thêm";
+            this.btn_pm_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_pm_t.UseVisualStyleBackColor = true;
             this.btn_pm_t.Click += new System.EventHandler(this.btn_pm_t_Click);
             // 
             // label_pm1
             // 
             this.label_pm1.AutoSize = true;
-            this.label_pm1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pm1.Location = new System.Drawing.Point(59, 53);
+            this.label_pm1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_pm1.Location = new System.Drawing.Point(8, 68);
             this.label_pm1.Name = "label_pm1";
-            this.label_pm1.Size = new System.Drawing.Size(268, 32);
+            this.label_pm1.Size = new System.Drawing.Size(287, 26);
             this.label_pm1.TabIndex = 0;
-            this.label_pm1.Text = "Quản lý phiếu mượn";
+            this.label_pm1.Text = "QUẢN LÝ PHIẾU MƯỢN";
             // 
             // pnl_pm2
             // 
@@ -150,6 +160,15 @@
             this.pnl_ds3.Size = new System.Drawing.Size(911, 74);
             this.pnl_ds3.TabIndex = 3;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label_pm1);
+            this.panel1.Location = new System.Drawing.Point(44, 40);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(298, 527);
+            this.panel1.TabIndex = 5;
+            // 
             // Urc_phieumuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,11 +180,12 @@
             this.Size = new System.Drawing.Size(1315, 707);
             this.Load += new System.EventHandler(this.Urc_phieumuon_Load);
             this.panel_pm1.ResumeLayout(false);
-            this.panel_pm1.PerformLayout();
             this.pnl_pm2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_pm)).EndInit();
             this.pnl_ds3.ResumeLayout(false);
             this.pnl_ds3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -183,5 +203,6 @@
         private System.Windows.Forms.Button btn_pm_tk;
         private System.Windows.Forms.Button btn_pm_ct;
         private System.Windows.Forms.Panel pnl_ds3;
+        private System.Windows.Forms.Panel panel1;
     }
 }

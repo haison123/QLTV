@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_acc_suatk));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_acc_s = new System.Windows.Forms.Button();
             this.txb_acc_pass = new System.Windows.Forms.TextBox();
@@ -57,11 +58,13 @@
             // 
             // btn_acc_s
             // 
-            this.btn_acc_s.Location = new System.Drawing.Point(438, 365);
+            this.btn_acc_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_acc_s.Image")));
+            this.btn_acc_s.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_acc_s.Location = new System.Drawing.Point(451, 303);
             this.btn_acc_s.Name = "btn_acc_s";
-            this.btn_acc_s.Size = new System.Drawing.Size(138, 23);
+            this.btn_acc_s.Size = new System.Drawing.Size(125, 67);
             this.btn_acc_s.TabIndex = 5;
-            this.btn_acc_s.Text = "Sửa thông tin";
+            this.btn_acc_s.Text = "         Sửa thông tin";
             this.btn_acc_s.UseVisualStyleBackColor = true;
             this.btn_acc_s.Click += new System.EventHandler(this.btn_acc_t_Click);
             // 

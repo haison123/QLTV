@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_acc_xoatk));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_acc_x = new System.Windows.Forms.Button();
             this.txb_acc_pass = new System.Windows.Forms.TextBox();
@@ -57,11 +58,13 @@
             // 
             // btn_acc_x
             // 
-            this.btn_acc_x.Location = new System.Drawing.Point(438, 365);
+            this.btn_acc_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_acc_x.Image")));
+            this.btn_acc_x.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_acc_x.Location = new System.Drawing.Point(431, 312);
             this.btn_acc_x.Name = "btn_acc_x";
-            this.btn_acc_x.Size = new System.Drawing.Size(138, 23);
+            this.btn_acc_x.Size = new System.Drawing.Size(138, 70);
             this.btn_acc_x.TabIndex = 5;
-            this.btn_acc_x.Text = "Xóa tài khoản";
+            this.btn_acc_x.Text = "        Xóa tài khoản";
             this.btn_acc_x.UseVisualStyleBackColor = true;
             this.btn_acc_x.Click += new System.EventHandler(this.btn_acc_x_Click);
             // 

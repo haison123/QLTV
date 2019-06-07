@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Urc_docgia));
             this.panel_dg_1 = new System.Windows.Forms.Panel();
             this.label_dg7 = new System.Windows.Forms.Label();
             this.label_dg6 = new System.Windows.Forms.Label();
@@ -49,14 +50,17 @@
             this.btn_dg_tkt = new System.Windows.Forms.Button();
             this.btn_dg_tkm = new System.Windows.Forms.Button();
             this.txb_dg_tk = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_dg_1.SuspendLayout();
             this.pnl_dg2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_dg)).BeginInit();
             this.pnl_ds3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_dg_1
             // 
+            this.panel_dg_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_dg_1.BackgroundImage")));
             this.panel_dg_1.Controls.Add(this.label_dg7);
             this.panel_dg_1.Controls.Add(this.label_dg6);
             this.panel_dg_1.Controls.Add(this.label_dg5);
@@ -70,11 +74,11 @@
             this.panel_dg_1.Controls.Add(this.btn_dg_x);
             this.panel_dg_1.Controls.Add(this.btn_dg_t);
             this.panel_dg_1.Controls.Add(this.txb_dg_mdg);
-            this.panel_dg_1.Controls.Add(this.label_dg1);
+            this.panel_dg_1.Controls.Add(this.panel1);
             this.panel_dg_1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_dg_1.Location = new System.Drawing.Point(0, 0);
             this.panel_dg_1.Name = "panel_dg_1";
-            this.panel_dg_1.Size = new System.Drawing.Size(372, 707);
+            this.panel_dg_1.Size = new System.Drawing.Size(395, 707);
             this.panel_dg_1.TabIndex = 1;
             this.panel_dg_1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -153,31 +157,37 @@
             // 
             // btn_dg_s
             // 
+            this.btn_dg_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_dg_s.Image")));
             this.btn_dg_s.Location = new System.Drawing.Point(159, 455);
             this.btn_dg_s.Name = "btn_dg_s";
-            this.btn_dg_s.Size = new System.Drawing.Size(75, 23);
+            this.btn_dg_s.Size = new System.Drawing.Size(75, 72);
             this.btn_dg_s.TabIndex = 8;
             this.btn_dg_s.Text = "Sửa";
+            this.btn_dg_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_dg_s.UseVisualStyleBackColor = true;
             this.btn_dg_s.Click += new System.EventHandler(this.btn_dg_s_Click);
             // 
             // btn_dg_x
             // 
+            this.btn_dg_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_dg_x.Image")));
             this.btn_dg_x.Location = new System.Drawing.Point(280, 455);
             this.btn_dg_x.Name = "btn_dg_x";
-            this.btn_dg_x.Size = new System.Drawing.Size(75, 23);
+            this.btn_dg_x.Size = new System.Drawing.Size(75, 72);
             this.btn_dg_x.TabIndex = 9;
             this.btn_dg_x.Text = "Xóa";
+            this.btn_dg_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_dg_x.UseVisualStyleBackColor = true;
             this.btn_dg_x.Click += new System.EventHandler(this.btn_dg_x_Click);
             // 
             // btn_dg_t
             // 
+            this.btn_dg_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_dg_t.Image")));
             this.btn_dg_t.Location = new System.Drawing.Point(39, 455);
             this.btn_dg_t.Name = "btn_dg_t";
-            this.btn_dg_t.Size = new System.Drawing.Size(75, 23);
+            this.btn_dg_t.Size = new System.Drawing.Size(75, 72);
             this.btn_dg_t.TabIndex = 7;
             this.btn_dg_t.Text = "Thêm";
+            this.btn_dg_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_dg_t.UseVisualStyleBackColor = true;
             this.btn_dg_t.Click += new System.EventHandler(this.btn_dg_t_Click);
             // 
@@ -192,11 +202,11 @@
             // 
             this.label_dg1.AutoSize = true;
             this.label_dg1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_dg1.Location = new System.Drawing.Point(87, 51);
+            this.label_dg1.Location = new System.Drawing.Point(42, 35);
             this.label_dg1.Name = "label_dg1";
-            this.label_dg1.Size = new System.Drawing.Size(206, 32);
+            this.label_dg1.Size = new System.Drawing.Size(277, 32);
             this.label_dg1.TabIndex = 0;
-            this.label_dg1.Text = "Quản lý độc giả";
+            this.label_dg1.Text = "QUẢN LÝ ĐỘC GIẢ";
             // 
             // pnl_dg2
             // 
@@ -253,6 +263,15 @@
             this.txb_dg_tk.Size = new System.Drawing.Size(364, 20);
             this.txb_dg_tk.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label_dg1);
+            this.panel1.Location = new System.Drawing.Point(20, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(358, 546);
+            this.panel1.TabIndex = 17;
+            // 
             // Urc_docgia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,6 +288,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_dg)).EndInit();
             this.pnl_ds3.ResumeLayout(false);
             this.pnl_ds3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -296,5 +317,6 @@
         private System.Windows.Forms.Button btn_dg_tkt;
         private System.Windows.Forms.Button btn_dg_tkm;
         private System.Windows.Forms.TextBox txb_dg_tk;
+        private System.Windows.Forms.Panel panel1;
     }
 }

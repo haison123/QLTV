@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_add_pm));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -82,31 +83,33 @@
             // 
             // btn_pm_ch
             // 
-            this.btn_pm_ch.Location = new System.Drawing.Point(334, 72);
+            this.btn_pm_ch.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_ch.Image")));
+            this.btn_pm_ch.Location = new System.Drawing.Point(334, 56);
             this.btn_pm_ch.Name = "btn_pm_ch";
-            this.btn_pm_ch.Size = new System.Drawing.Size(134, 23);
+            this.btn_pm_ch.Size = new System.Drawing.Size(134, 41);
             this.btn_pm_ch.TabIndex = 5;
-            this.btn_pm_ch.Text = ">>>>>";
             this.btn_pm_ch.UseVisualStyleBackColor = true;
             this.btn_pm_ch.Click += new System.EventHandler(this.btn_pm_ch_Click);
             // 
             // btn_pm_re
             // 
-            this.btn_pm_re.Location = new System.Drawing.Point(334, 101);
+            this.btn_pm_re.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_re.Image")));
+            this.btn_pm_re.Location = new System.Drawing.Point(334, 103);
             this.btn_pm_re.Name = "btn_pm_re";
-            this.btn_pm_re.Size = new System.Drawing.Size(134, 23);
+            this.btn_pm_re.Size = new System.Drawing.Size(134, 41);
             this.btn_pm_re.TabIndex = 6;
-            this.btn_pm_re.Text = "<<<<<";
             this.btn_pm_re.UseVisualStyleBackColor = true;
             this.btn_pm_re.Click += new System.EventHandler(this.btn_pm_re_Click);
             // 
             // btn_pm_insert
             // 
-            this.btn_pm_insert.Location = new System.Drawing.Point(336, 362);
+            this.btn_pm_insert.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_insert.Image")));
+            this.btn_pm_insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_pm_insert.Location = new System.Drawing.Point(336, 356);
             this.btn_pm_insert.Name = "btn_pm_insert";
-            this.btn_pm_insert.Size = new System.Drawing.Size(136, 23);
+            this.btn_pm_insert.Size = new System.Drawing.Size(136, 40);
             this.btn_pm_insert.TabIndex = 5;
-            this.btn_pm_insert.Text = "Ghi nhận";
+            this.btn_pm_insert.Text = "          Ghi nhận";
             this.btn_pm_insert.UseVisualStyleBackColor = true;
             this.btn_pm_insert.Click += new System.EventHandler(this.btn_pm_insert_Click);
             // 

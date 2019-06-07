@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_update_pm));
             this.btn_pm_update = new System.Windows.Forms.Button();
             this.txb_pm_mdg = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,11 +50,13 @@
             // 
             // btn_pm_update
             // 
-            this.btn_pm_update.Location = new System.Drawing.Point(334, 353);
+            this.btn_pm_update.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_update.Image")));
+            this.btn_pm_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_pm_update.Location = new System.Drawing.Point(351, 344);
             this.btn_pm_update.Name = "btn_pm_update";
-            this.btn_pm_update.Size = new System.Drawing.Size(136, 23);
+            this.btn_pm_update.Size = new System.Drawing.Size(94, 41);
             this.btn_pm_update.TabIndex = 25;
-            this.btn_pm_update.Text = "Sửa";
+            this.btn_pm_update.Text = "          Sửa";
             this.btn_pm_update.UseVisualStyleBackColor = true;
             this.btn_pm_update.Click += new System.EventHandler(this.btn_pm_update_Click);
             // 
@@ -125,11 +128,11 @@
             // 
             // btn_pm_re
             // 
-            this.btn_pm_re.Location = new System.Drawing.Point(332, 101);
+            this.btn_pm_re.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_re.Image")));
+            this.btn_pm_re.Location = new System.Drawing.Point(332, 93);
             this.btn_pm_re.Name = "btn_pm_re";
-            this.btn_pm_re.Size = new System.Drawing.Size(134, 23);
+            this.btn_pm_re.Size = new System.Drawing.Size(134, 41);
             this.btn_pm_re.TabIndex = 27;
-            this.btn_pm_re.Text = "<<<<<";
             this.btn_pm_re.UseVisualStyleBackColor = true;
             this.btn_pm_re.Click += new System.EventHandler(this.btn_pm_re_Click);
             // 
@@ -143,11 +146,11 @@
             // 
             // btn_pm_ch
             // 
-            this.btn_pm_ch.Location = new System.Drawing.Point(332, 72);
+            this.btn_pm_ch.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_ch.Image")));
+            this.btn_pm_ch.Location = new System.Drawing.Point(332, 46);
             this.btn_pm_ch.Name = "btn_pm_ch";
-            this.btn_pm_ch.Size = new System.Drawing.Size(134, 23);
+            this.btn_pm_ch.Size = new System.Drawing.Size(134, 41);
             this.btn_pm_ch.TabIndex = 26;
-            this.btn_pm_ch.Text = ">>>>>";
             this.btn_pm_ch.UseVisualStyleBackColor = true;
             this.btn_pm_ch.Click += new System.EventHandler(this.btn_pm_ch_Click);
             // 
@@ -179,21 +182,25 @@
             // 
             // btn_pm_load
             // 
-            this.btn_pm_load.Location = new System.Drawing.Point(365, 179);
+            this.btn_pm_load.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_load.Image")));
+            this.btn_pm_load.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_pm_load.Location = new System.Drawing.Point(364, 179);
             this.btn_pm_load.Name = "btn_pm_load";
-            this.btn_pm_load.Size = new System.Drawing.Size(75, 23);
+            this.btn_pm_load.Size = new System.Drawing.Size(81, 23);
             this.btn_pm_load.TabIndex = 32;
-            this.btn_pm_load.Text = "Chọn";
+            this.btn_pm_load.Text = "         Chọn";
             this.btn_pm_load.UseVisualStyleBackColor = true;
             this.btn_pm_load.Click += new System.EventHandler(this.btn_pm_load_Click);
             // 
             // btn_pm_tra
             // 
-            this.btn_pm_tra.Location = new System.Drawing.Point(334, 382);
+            this.btn_pm_tra.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_tra.Image")));
+            this.btn_pm_tra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_pm_tra.Location = new System.Drawing.Point(351, 391);
             this.btn_pm_tra.Name = "btn_pm_tra";
-            this.btn_pm_tra.Size = new System.Drawing.Size(136, 23);
+            this.btn_pm_tra.Size = new System.Drawing.Size(94, 41);
             this.btn_pm_tra.TabIndex = 33;
-            this.btn_pm_tra.Text = "Trả hết sách";
+            this.btn_pm_tra.Text = "          Trả sách";
             this.btn_pm_tra.UseVisualStyleBackColor = true;
             this.btn_pm_tra.Click += new System.EventHandler(this.btn_pm_tra_Click);
             // 

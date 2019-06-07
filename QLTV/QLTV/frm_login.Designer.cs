@@ -49,27 +49,33 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(45, 59);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 126);
+            this.panel1.Size = new System.Drawing.Size(310, 154);
             this.panel1.TabIndex = 1;
             // 
             // btn_thoat
             // 
             this.btn_thoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_thoat.Location = new System.Drawing.Point(217, 79);
+            this.btn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_thoat.Image")));
+            this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_thoat.Location = new System.Drawing.Point(205, 79);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(75, 23);
+            this.btn_thoat.Size = new System.Drawing.Size(87, 53);
             this.btn_thoat.TabIndex = 4;
             this.btn_thoat.Text = "Thoát";
+            this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_thoat.UseVisualStyleBackColor = true;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_dang_nhap
             // 
-            this.btn_dang_nhap.Location = new System.Drawing.Point(117, 79);
+            this.btn_dang_nhap.Image = ((System.Drawing.Image)(resources.GetObject("btn_dang_nhap.Image")));
+            this.btn_dang_nhap.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_dang_nhap.Location = new System.Drawing.Point(105, 79);
             this.btn_dang_nhap.Name = "btn_dang_nhap";
-            this.btn_dang_nhap.Size = new System.Drawing.Size(75, 23);
+            this.btn_dang_nhap.Size = new System.Drawing.Size(87, 53);
             this.btn_dang_nhap.TabIndex = 3;
             this.btn_dang_nhap.Text = "Đăng nhập";
+            this.btn_dang_nhap.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_dang_nhap.UseVisualStyleBackColor = true;
             this.btn_dang_nhap.Click += new System.EventHandler(this.btn_dang_nhap_Click);
             // 
@@ -118,7 +124,6 @@
             this.Name = "frm_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-//            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_login_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_login_FormClosed);
             this.Load += new System.EventHandler(this.frm_login_Load);
             this.panel1.ResumeLayout(false);

@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Urc_sach));
             this.panel_s1 = new System.Windows.Forms.Panel();
+            this.cbb_ds = new System.Windows.Forms.ComboBox();
             this.label_s4 = new System.Windows.Forms.Label();
             this.label_s3 = new System.Windows.Forms.Label();
             this.label_s2 = new System.Windows.Forms.Label();
@@ -44,7 +46,7 @@
             this.btn_s_tkt = new System.Windows.Forms.Button();
             this.btn_s_tkm = new System.Windows.Forms.Button();
             this.txb_s_tk = new System.Windows.Forms.TextBox();
-            this.cbb_ds = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_s1.SuspendLayout();
             this.pnl_s2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_s)).BeginInit();
@@ -53,6 +55,7 @@
             // 
             // panel_s1
             // 
+            this.panel_s1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_s1.BackgroundImage")));
             this.panel_s1.Controls.Add(this.cbb_ds);
             this.panel_s1.Controls.Add(this.label_s4);
             this.panel_s1.Controls.Add(this.label_s3);
@@ -63,11 +66,20 @@
             this.panel_s1.Controls.Add(this.btn_s_x);
             this.panel_s1.Controls.Add(this.btn_s_t);
             this.panel_s1.Controls.Add(this.label_s1);
+            this.panel_s1.Controls.Add(this.panel1);
             this.panel_s1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_s1.Location = new System.Drawing.Point(0, 0);
             this.panel_s1.Name = "panel_s1";
-            this.panel_s1.Size = new System.Drawing.Size(371, 707);
+            this.panel_s1.Size = new System.Drawing.Size(395, 707);
             this.panel_s1.TabIndex = 1;
+            // 
+            // cbb_ds
+            // 
+            this.cbb_ds.FormattingEnabled = true;
+            this.cbb_ds.Location = new System.Drawing.Point(139, 151);
+            this.cbb_ds.Name = "cbb_ds";
+            this.cbb_ds.Size = new System.Drawing.Size(216, 21);
+            this.cbb_ds.TabIndex = 14;
             // 
             // label_s4
             // 
@@ -112,43 +124,50 @@
             // 
             // btn_s_s
             // 
+            this.btn_s_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_s.Image")));
             this.btn_s_s.Location = new System.Drawing.Point(163, 455);
             this.btn_s_s.Name = "btn_s_s";
-            this.btn_s_s.Size = new System.Drawing.Size(75, 23);
+            this.btn_s_s.Size = new System.Drawing.Size(75, 72);
             this.btn_s_s.TabIndex = 6;
             this.btn_s_s.Text = "Sửa";
+            this.btn_s_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_s_s.UseVisualStyleBackColor = true;
             this.btn_s_s.Click += new System.EventHandler(this.btn_s_s_Click);
             // 
             // btn_s_x
             // 
+            this.btn_s_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_x.Image")));
             this.btn_s_x.Location = new System.Drawing.Point(280, 455);
             this.btn_s_x.Name = "btn_s_x";
-            this.btn_s_x.Size = new System.Drawing.Size(75, 23);
+            this.btn_s_x.Size = new System.Drawing.Size(75, 72);
             this.btn_s_x.TabIndex = 7;
             this.btn_s_x.Text = "Xóa";
+            this.btn_s_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_s_x.UseVisualStyleBackColor = true;
             this.btn_s_x.Click += new System.EventHandler(this.btn_s_x_Click);
             // 
             // btn_s_t
             // 
+            this.btn_s_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_t.Image")));
             this.btn_s_t.Location = new System.Drawing.Point(39, 455);
             this.btn_s_t.Name = "btn_s_t";
-            this.btn_s_t.Size = new System.Drawing.Size(75, 23);
+            this.btn_s_t.Size = new System.Drawing.Size(75, 72);
             this.btn_s_t.TabIndex = 5;
             this.btn_s_t.Text = "Thêm";
+            this.btn_s_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_s_t.UseVisualStyleBackColor = true;
             this.btn_s_t.Click += new System.EventHandler(this.btn_s_t_Click);
             // 
             // label_s1
             // 
             this.label_s1.AutoSize = true;
+            this.label_s1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label_s1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_s1.Location = new System.Drawing.Point(101, 52);
+            this.label_s1.Location = new System.Drawing.Point(84, 65);
             this.label_s1.Name = "label_s1";
-            this.label_s1.Size = new System.Drawing.Size(173, 32);
+            this.label_s1.Size = new System.Drawing.Size(233, 32);
             this.label_s1.TabIndex = 0;
-            this.label_s1.Text = "Quản lý sách";
+            this.label_s1.Text = "QUẢN LÝ SÁCH";
             // 
             // pnl_s2
             // 
@@ -205,13 +224,13 @@
             this.txb_s_tk.Size = new System.Drawing.Size(364, 20);
             this.txb_s_tk.TabIndex = 0;
             // 
-            // cbb_ds
+            // panel1
             // 
-            this.cbb_ds.FormattingEnabled = true;
-            this.cbb_ds.Location = new System.Drawing.Point(139, 151);
-            this.cbb_ds.Name = "cbb_ds";
-            this.cbb_ds.Size = new System.Drawing.Size(216, 21);
-            this.cbb_ds.TabIndex = 14;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(23, 43);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(349, 512);
+            this.panel1.TabIndex = 15;
             // 
             // Urc_sach
             // 
@@ -252,5 +271,6 @@
         private System.Windows.Forms.Button btn_s_tkm;
         private System.Windows.Forms.TextBox txb_s_tk;
         private System.Windows.Forms.ComboBox cbb_ds;
+        private System.Windows.Forms.Panel panel1;
     }
 }

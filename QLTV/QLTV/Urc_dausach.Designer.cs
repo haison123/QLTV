@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Urc_dausach));
             this.panel_ds1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.btn_ds_t = new System.Windows.Forms.Button();
             this.txb_ds_mds = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_ds_tkm = new System.Windows.Forms.Button();
             this.pnl_ds2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dtgw_ds = new System.Windows.Forms.DataGridView();
@@ -60,6 +62,7 @@
             // panel_ds1
             // 
             this.panel_ds1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel_ds1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_ds1.BackgroundImage")));
             this.panel_ds1.Controls.Add(this.label7);
             this.panel_ds1.Controls.Add(this.label6);
             this.panel_ds1.Controls.Add(this.label5);
@@ -76,9 +79,10 @@
             this.panel_ds1.Controls.Add(this.btn_ds_t);
             this.panel_ds1.Controls.Add(this.txb_ds_mds);
             this.panel_ds1.Controls.Add(this.label1);
+            this.panel_ds1.Controls.Add(this.panel1);
             this.panel_ds1.Location = new System.Drawing.Point(0, 3);
             this.panel_ds1.Name = "panel_ds1";
-            this.panel_ds1.Size = new System.Drawing.Size(373, 704);
+            this.panel_ds1.Size = new System.Drawing.Size(392, 704);
             this.panel_ds1.TabIndex = 0;
             // 
             // label7
@@ -174,31 +178,37 @@
             // 
             // btn_ds_s
             // 
-            this.btn_ds_s.Location = new System.Drawing.Point(161, 455);
+            this.btn_ds_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_s.Image")));
+            this.btn_ds_s.Location = new System.Drawing.Point(161, 444);
             this.btn_ds_s.Name = "btn_ds_s";
-            this.btn_ds_s.Size = new System.Drawing.Size(75, 23);
+            this.btn_ds_s.Size = new System.Drawing.Size(75, 72);
             this.btn_ds_s.TabIndex = 8;
             this.btn_ds_s.Text = "Sửa";
+            this.btn_ds_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ds_s.UseVisualStyleBackColor = true;
             this.btn_ds_s.Click += new System.EventHandler(this.btn_ds_s_Click);
             // 
             // btn_ds_x
             // 
-            this.btn_ds_x.Location = new System.Drawing.Point(280, 455);
+            this.btn_ds_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_x.Image")));
+            this.btn_ds_x.Location = new System.Drawing.Point(280, 444);
             this.btn_ds_x.Name = "btn_ds_x";
-            this.btn_ds_x.Size = new System.Drawing.Size(75, 23);
+            this.btn_ds_x.Size = new System.Drawing.Size(75, 72);
             this.btn_ds_x.TabIndex = 9;
             this.btn_ds_x.Text = "Xóa";
+            this.btn_ds_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ds_x.UseVisualStyleBackColor = true;
             this.btn_ds_x.Click += new System.EventHandler(this.btn_ds_x_Click);
             // 
             // btn_ds_t
             // 
-            this.btn_ds_t.Location = new System.Drawing.Point(39, 455);
+            this.btn_ds_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_t.Image")));
+            this.btn_ds_t.Location = new System.Drawing.Point(39, 444);
             this.btn_ds_t.Name = "btn_ds_t";
-            this.btn_ds_t.Size = new System.Drawing.Size(75, 23);
+            this.btn_ds_t.Size = new System.Drawing.Size(75, 72);
             this.btn_ds_t.TabIndex = 7;
             this.btn_ds_t.Text = "Thêm";
+            this.btn_ds_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ds_t.UseVisualStyleBackColor = true;
             this.btn_ds_t.Click += new System.EventHandler(this.btn_ds_t_Click);
             // 
@@ -213,12 +223,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 52);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(42, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 32);
+            this.label1.Size = new System.Drawing.Size(302, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quản lý đầu sách";
+            this.label1.Text = "QUẢN LÝ ĐẦU SÁCH";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(23, 38);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(347, 525);
+            this.panel1.TabIndex = 17;
             // 
             // btn_ds_tkm
             // 
@@ -322,5 +342,6 @@
         private System.Windows.Forms.Panel pnl_ds3;
         private System.Windows.Forms.Button btn_ds_tkt;
         private System.Windows.Forms.TextBox txb_ds_tk;
+        private System.Windows.Forms.Panel panel1;
     }
 }
