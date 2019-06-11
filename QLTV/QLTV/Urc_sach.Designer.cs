@@ -40,14 +40,15 @@
             this.btn_s_x = new System.Windows.Forms.Button();
             this.btn_s_t = new System.Windows.Forms.Button();
             this.label_s1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_s2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dtgw_s = new System.Windows.Forms.DataGridView();
             this.pnl_ds3 = new System.Windows.Forms.Panel();
             this.btn_s_tkt = new System.Windows.Forms.Button();
             this.btn_s_tkm = new System.Windows.Forms.Button();
             this.txb_s_tk = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_s1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnl_s2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_s)).BeginInit();
             this.pnl_ds3.SuspendLayout();
@@ -62,9 +63,6 @@
             this.panel_s1.Controls.Add(this.label_s2);
             this.panel_s1.Controls.Add(this.txb_s_tt);
             this.panel_s1.Controls.Add(this.txb_s_ms);
-            this.panel_s1.Controls.Add(this.btn_s_s);
-            this.panel_s1.Controls.Add(this.btn_s_x);
-            this.panel_s1.Controls.Add(this.btn_s_t);
             this.panel_s1.Controls.Add(this.label_s1);
             this.panel_s1.Controls.Add(this.panel1);
             this.panel_s1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -124,38 +122,41 @@
             // 
             // btn_s_s
             // 
+            this.btn_s_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_s_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_s.Image")));
-            this.btn_s_s.Location = new System.Drawing.Point(163, 455);
+            this.btn_s_s.Location = new System.Drawing.Point(142, 412);
             this.btn_s_s.Name = "btn_s_s";
             this.btn_s_s.Size = new System.Drawing.Size(75, 72);
             this.btn_s_s.TabIndex = 6;
             this.btn_s_s.Text = "Sửa";
             this.btn_s_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_s_s.UseVisualStyleBackColor = true;
+            this.btn_s_s.UseVisualStyleBackColor = false;
             this.btn_s_s.Click += new System.EventHandler(this.btn_s_s_Click);
             // 
             // btn_s_x
             // 
+            this.btn_s_x.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_s_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_x.Image")));
-            this.btn_s_x.Location = new System.Drawing.Point(280, 455);
+            this.btn_s_x.Location = new System.Drawing.Point(257, 412);
             this.btn_s_x.Name = "btn_s_x";
             this.btn_s_x.Size = new System.Drawing.Size(75, 72);
             this.btn_s_x.TabIndex = 7;
             this.btn_s_x.Text = "Xóa";
             this.btn_s_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_s_x.UseVisualStyleBackColor = true;
+            this.btn_s_x.UseVisualStyleBackColor = false;
             this.btn_s_x.Click += new System.EventHandler(this.btn_s_x_Click);
             // 
             // btn_s_t
             // 
+            this.btn_s_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_s_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_t.Image")));
-            this.btn_s_t.Location = new System.Drawing.Point(39, 455);
+            this.btn_s_t.Location = new System.Drawing.Point(16, 412);
             this.btn_s_t.Name = "btn_s_t";
             this.btn_s_t.Size = new System.Drawing.Size(75, 72);
             this.btn_s_t.TabIndex = 5;
             this.btn_s_t.Text = "Thêm";
             this.btn_s_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_s_t.UseVisualStyleBackColor = true;
+            this.btn_s_t.UseVisualStyleBackColor = false;
             this.btn_s_t.Click += new System.EventHandler(this.btn_s_t_Click);
             // 
             // label_s1
@@ -168,6 +169,17 @@
             this.label_s1.Size = new System.Drawing.Size(233, 32);
             this.label_s1.TabIndex = 0;
             this.label_s1.Text = "QUẢN LÝ SÁCH";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.btn_s_t);
+            this.panel1.Controls.Add(this.btn_s_s);
+            this.panel1.Controls.Add(this.btn_s_x);
+            this.panel1.Location = new System.Drawing.Point(23, 43);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(349, 512);
+            this.panel1.TabIndex = 15;
             // 
             // pnl_s2
             // 
@@ -224,14 +236,6 @@
             this.txb_s_tk.Size = new System.Drawing.Size(364, 20);
             this.txb_s_tk.TabIndex = 0;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(23, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(349, 512);
-            this.panel1.TabIndex = 15;
-            // 
             // Urc_sach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,6 +248,7 @@
             this.Load += new System.EventHandler(this.Urc_sach_Load);
             this.panel_s1.ResumeLayout(false);
             this.panel_s1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.pnl_s2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_s)).EndInit();
             this.pnl_ds3.ResumeLayout(false);

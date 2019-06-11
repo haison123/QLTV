@@ -54,6 +54,7 @@
             // 
             // btn_thoat
             // 
+            this.btn_thoat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_thoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_thoat.Image")));
             this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -63,11 +64,12 @@
             this.btn_thoat.TabIndex = 4;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.UseVisualStyleBackColor = false;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_dang_nhap
             // 
+            this.btn_dang_nhap.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_dang_nhap.Image = ((System.Drawing.Image)(resources.GetObject("btn_dang_nhap.Image")));
             this.btn_dang_nhap.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_dang_nhap.Location = new System.Drawing.Point(105, 79);
@@ -76,7 +78,7 @@
             this.btn_dang_nhap.TabIndex = 3;
             this.btn_dang_nhap.Text = "Đăng nhập";
             this.btn_dang_nhap.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_dang_nhap.UseVisualStyleBackColor = true;
+            this.btn_dang_nhap.UseVisualStyleBackColor = false;
             this.btn_dang_nhap.Click += new System.EventHandler(this.btn_dang_nhap_Click);
             // 
             // txb_acc_pass

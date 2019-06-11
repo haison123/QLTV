@@ -1119,14 +1119,14 @@
             this.pal_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pal_main.Location = new System.Drawing.Point(5, 155);
             this.pal_main.Name = "pal_main";
-            this.pal_main.Size = new System.Drawing.Size(872, 229);
+            this.pal_main.Size = new System.Drawing.Size(872, 225);
             this.pal_main.TabIndex = 1;
             // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 386);
+            this.ClientSize = new System.Drawing.Size(882, 382);
             this.Controls.Add(this.pal_main);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

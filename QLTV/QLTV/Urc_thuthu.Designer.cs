@@ -43,6 +43,7 @@
             this.btn_tt_x = new System.Windows.Forms.Button();
             this.btn_tt_t = new System.Windows.Forms.Button();
             this.txb_tt_mtt = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_ds2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dtgw_tt = new System.Windows.Forms.DataGridView();
@@ -50,12 +51,11 @@
             this.btn_tt_tkt = new System.Windows.Forms.Button();
             this.btn_tt_tkm = new System.Windows.Forms.Button();
             this.txb_tt_tk = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_ds1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnl_ds2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_tt)).BeginInit();
             this.pnl_ds3.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_ds1
@@ -71,9 +71,6 @@
             this.panel_ds1.Controls.Add(this.txb_tt_gt);
             this.panel_ds1.Controls.Add(this.txb_tt_dc);
             this.panel_ds1.Controls.Add(this.txb_tt_ttt);
-            this.panel_ds1.Controls.Add(this.btn_tt_s);
-            this.panel_ds1.Controls.Add(this.btn_tt_x);
-            this.panel_ds1.Controls.Add(this.btn_tt_t);
             this.panel_ds1.Controls.Add(this.txb_tt_mtt);
             this.panel_ds1.Controls.Add(this.panel1);
             this.panel_ds1.Location = new System.Drawing.Point(0, 3);
@@ -157,38 +154,41 @@
             // 
             // btn_tt_s
             // 
+            this.btn_tt_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_tt_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_s.Image")));
-            this.btn_tt_s.Location = new System.Drawing.Point(161, 455);
+            this.btn_tt_s.Location = new System.Drawing.Point(133, 385);
             this.btn_tt_s.Name = "btn_tt_s";
             this.btn_tt_s.Size = new System.Drawing.Size(75, 72);
             this.btn_tt_s.TabIndex = 8;
             this.btn_tt_s.Text = "Sửa";
             this.btn_tt_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_tt_s.UseVisualStyleBackColor = true;
+            this.btn_tt_s.UseVisualStyleBackColor = false;
             this.btn_tt_s.Click += new System.EventHandler(this.btn_tt_s_Click);
             // 
             // btn_tt_x
             // 
+            this.btn_tt_x.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_tt_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_x.Image")));
-            this.btn_tt_x.Location = new System.Drawing.Point(280, 455);
+            this.btn_tt_x.Location = new System.Drawing.Point(254, 385);
             this.btn_tt_x.Name = "btn_tt_x";
             this.btn_tt_x.Size = new System.Drawing.Size(75, 72);
             this.btn_tt_x.TabIndex = 9;
             this.btn_tt_x.Text = "Xóa";
             this.btn_tt_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_tt_x.UseVisualStyleBackColor = true;
+            this.btn_tt_x.UseVisualStyleBackColor = false;
             this.btn_tt_x.Click += new System.EventHandler(this.btn_tt_x_Click);
             // 
             // btn_tt_t
             // 
+            this.btn_tt_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_tt_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_t.Image")));
-            this.btn_tt_t.Location = new System.Drawing.Point(39, 455);
+            this.btn_tt_t.Location = new System.Drawing.Point(13, 385);
             this.btn_tt_t.Name = "btn_tt_t";
             this.btn_tt_t.Size = new System.Drawing.Size(75, 72);
             this.btn_tt_t.TabIndex = 7;
             this.btn_tt_t.Text = "Thêm";
             this.btn_tt_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_tt_t.UseVisualStyleBackColor = true;
+            this.btn_tt_t.UseVisualStyleBackColor = false;
             this.btn_tt_t.Click += new System.EventHandler(this.btn_tt_t_Click);
             // 
             // txb_tt_mtt
@@ -197,6 +197,18 @@
             this.txb_tt_mtt.Name = "txb_tt_mtt";
             this.txb_tt_mtt.Size = new System.Drawing.Size(216, 20);
             this.txb_tt_mtt.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btn_tt_x);
+            this.panel1.Controls.Add(this.btn_tt_s);
+            this.panel1.Controls.Add(this.btn_tt_t);
+            this.panel1.Location = new System.Drawing.Point(26, 70);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(344, 504);
+            this.panel1.TabIndex = 16;
             // 
             // label1
             // 
@@ -264,15 +276,6 @@
             this.txb_tt_tk.Size = new System.Drawing.Size(364, 20);
             this.txb_tt_tk.TabIndex = 0;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(26, 70);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(344, 504);
-            this.panel1.TabIndex = 16;
-            // 
             // Urc_thuthu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,12 +288,12 @@
             this.Load += new System.EventHandler(this.Urc_thuthu_Load);
             this.panel_ds1.ResumeLayout(false);
             this.panel_ds1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnl_ds2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_tt)).EndInit();
             this.pnl_ds3.ResumeLayout(false);
             this.pnl_ds3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -19,6 +19,8 @@ namespace QLTV
         sach_BUS s_BUS = new sach_BUS();
         phieumuon_BUS pm_bus = new phieumuon_BUS();
         ctpm_BUS ct_bus = new ctpm_BUS();
+        thuthu_BUS tt_bus = new thuthu_BUS();
+        docgia_BUS dg_bus = new docgia_BUS();
         string[] sach = new string[100];
         public frm_update_pm()
         {
@@ -38,14 +40,14 @@ namespace QLTV
        
         private void btn_pm_load_Click(object sender, EventArgs e)
         {
-            if( pm_bus.getlist_mpm(txb_pm_mpm.Text).Rows.Count==0)
+            if( pm_bus.getlist_mpm(cbb_pm.SelectedValue.ToString()).Rows.Count==0)
                 MessageBox.Show("Mã phiếu mượn không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                for (int i = 0; i < ct_bus.getlist_CTPM(txb_pm_mpm.Text).Rows.Count; i++)
+                for (int i = 0; i < ct_bus.getlist_CTPM(cbb_pm.SelectedValue.ToString()).Rows.Count; i++)
                 {
-                    listBox2.Items.Add(ct_bus.getlist_CTPM(txb_pm_mpm.Text).Rows[i][1].ToString());
-                    sach[0]= ct_bus.getlist_CTPM(txb_pm_mpm.Text).Rows[i][1].ToString();
+                    listBox2.Items.Add(ct_bus.getlist_CTPM(cbb_pm.SelectedValue.ToString()).Rows[i][1].ToString());
+                    sach[0]= ct_bus.getlist_CTPM(cbb_pm.SelectedValue.ToString()).Rows[i][1].ToString();
                 }
             }
             
@@ -58,6 +60,18 @@ namespace QLTV
             comboBox1.DataSource = ds_bus.getlist();
             comboBox1.DisplayMember = "TenDS";
             comboBox1.ValueMember = "TenDS";
+
+            cbb_dg.DataSource = dg_bus.getlist();
+            cbb_dg.DisplayMember = "TenDg";
+            cbb_dg.ValueMember = "MaDg";
+
+            cbb_tt.DataSource = tt_bus.getlist();
+            cbb_tt.DisplayMember = "TenTT";
+            cbb_tt.ValueMember = "MaTT";
+
+            cbb_pm.DataSource = pm_bus.getlist();
+            cbb_pm.DisplayMember = "MaPM";
+            cbb_pm.ValueMember = "MaPM";
         }
 
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
@@ -110,17 +124,14 @@ namespace QLTV
         private void btn_pm_update_Click(object sender, EventArgs e)
         {
             phieumuon_DTO pm = new phieumuon_DTO();
-            pm.mapm = txb_pm_mpm.Text;
+            pm.mapm = cbb_pm.SelectedValue.ToString();
             for (int i = 0; i < sach.Length ; i++)
             {
                 s_BUS.sua_trangthai2(sach[i]);
             }
             pm_bus.xoa(pm);
 
-            pm.mapm = txb_pm_mpm.Text;
-            pm.matt = txb_pm_mtt.Text;
             pm.ngaymuon = txb_pm_nm.Text;
-            pm.madg = txb_pm_mdg.Text;
 
             int check = pm_bus.them(pm, pm.matt, pm.madg);
             try
@@ -146,7 +157,7 @@ namespace QLTV
                     ctpm_DTO ct = new ctpm_DTO();
                     for (int i = 0; i < listBox2.Items.Count; i++)
                     {
-                        ct.mapm = txb_pm_mpm.Text;
+                        ct.mapm = cbb_pm.SelectedValue.ToString();
                         ct.mas = listBox2.Items[i].ToString();
                         ct_bus.themctpm(ct);
                         s_BUS.sua_trangthai(listBox2.Items[i].ToString());
@@ -162,16 +173,14 @@ namespace QLTV
             {
                 MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            txb_pm_mdg.Text = "";
-            txb_pm_mpm.Text = "";
-            txb_pm_mtt.Text = "";
+           
             txb_pm_nm.Text = "";
         }
 
         private void btn_pm_tra_Click(object sender, EventArgs e)
         {
             phieumuon_DTO pm = new phieumuon_DTO();
-            pm.mapm = txb_pm_mpm.Text;
+            pm.mapm = cbb_pm.SelectedValue.ToString();
             for (int i = 0; i < listBox2.Items.Count; i++)
             {
                 s_BUS.sua_trangthai2(listBox2.Items[i].ToString());

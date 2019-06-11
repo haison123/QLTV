@@ -37,13 +37,13 @@
             this.btn_pm_re = new System.Windows.Forms.Button();
             this.btn_pm_insert = new System.Windows.Forms.Button();
             this.txb_pm_mpm = new System.Windows.Forms.TextBox();
-            this.txb_pm_mtt = new System.Windows.Forms.TextBox();
-            this.txb_pm_mdg = new System.Windows.Forms.TextBox();
             this.txb_pm_nm = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.cbb_dg = new System.Windows.Forms.ComboBox();
+            this.cbb_tt = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // listBox1
@@ -103,6 +103,7 @@
             // 
             // btn_pm_insert
             // 
+            this.btn_pm_insert.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_pm_insert.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_insert.Image")));
             this.btn_pm_insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_pm_insert.Location = new System.Drawing.Point(336, 356);
@@ -110,7 +111,7 @@
             this.btn_pm_insert.Size = new System.Drawing.Size(136, 40);
             this.btn_pm_insert.TabIndex = 5;
             this.btn_pm_insert.Text = "          Ghi nhận";
-            this.btn_pm_insert.UseVisualStyleBackColor = true;
+            this.btn_pm_insert.UseVisualStyleBackColor = false;
             this.btn_pm_insert.Click += new System.EventHandler(this.btn_pm_insert_Click);
             // 
             // txb_pm_mpm
@@ -120,21 +121,6 @@
             this.txb_pm_mpm.Size = new System.Drawing.Size(132, 20);
             this.txb_pm_mpm.TabIndex = 1;
             this.txb_pm_mpm.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txb_pm_mtt
-            // 
-            this.txb_pm_mtt.Location = new System.Drawing.Point(336, 222);
-            this.txb_pm_mtt.Name = "txb_pm_mtt";
-            this.txb_pm_mtt.Size = new System.Drawing.Size(132, 20);
-            this.txb_pm_mtt.TabIndex = 2;
-            // 
-            // txb_pm_mdg
-            // 
-            this.txb_pm_mdg.Location = new System.Drawing.Point(336, 318);
-            this.txb_pm_mdg.Name = "txb_pm_mdg";
-            this.txb_pm_mdg.Size = new System.Drawing.Size(132, 20);
-            this.txb_pm_mdg.TabIndex = 4;
-            this.txb_pm_mdg.TextChanged += new System.EventHandler(this.txb_pm_mdg_TextChanged);
             // 
             // txb_pm_nm
             // 
@@ -180,17 +166,33 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Mã độc giả";
             // 
+            // cbb_dg
+            // 
+            this.cbb_dg.FormattingEnabled = true;
+            this.cbb_dg.Location = new System.Drawing.Point(336, 318);
+            this.cbb_dg.Name = "cbb_dg";
+            this.cbb_dg.Size = new System.Drawing.Size(132, 21);
+            this.cbb_dg.TabIndex = 17;
+            // 
+            // cbb_tt
+            // 
+            this.cbb_tt.FormattingEnabled = true;
+            this.cbb_tt.Location = new System.Drawing.Point(336, 222);
+            this.cbb_tt.Name = "cbb_tt";
+            this.cbb_tt.Size = new System.Drawing.Size(132, 21);
+            this.cbb_tt.TabIndex = 17;
+            // 
             // frm_add_pm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbb_tt);
+            this.Controls.Add(this.cbb_dg);
             this.Controls.Add(this.btn_pm_insert);
-            this.Controls.Add(this.txb_pm_mdg);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txb_pm_nm);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txb_pm_mtt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txb_pm_mpm);
             this.Controls.Add(this.label2);
@@ -219,12 +221,12 @@
         private System.Windows.Forms.Button btn_pm_re;
         private System.Windows.Forms.Button btn_pm_insert;
         private System.Windows.Forms.TextBox txb_pm_mpm;
-        private System.Windows.Forms.TextBox txb_pm_mtt;
-        private System.Windows.Forms.TextBox txb_pm_mdg;
         private System.Windows.Forms.TextBox txb_pm_nm;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbb_dg;
+        private System.Windows.Forms.ComboBox cbb_tt;
     }
 }

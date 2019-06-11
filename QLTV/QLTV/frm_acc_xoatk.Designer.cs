@@ -58,6 +58,7 @@
             // 
             // btn_acc_x
             // 
+            this.btn_acc_x.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_acc_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_acc_x.Image")));
             this.btn_acc_x.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_acc_x.Location = new System.Drawing.Point(431, 312);
@@ -65,7 +66,7 @@
             this.btn_acc_x.Size = new System.Drawing.Size(138, 70);
             this.btn_acc_x.TabIndex = 5;
             this.btn_acc_x.Text = "        Xóa tài khoản";
-            this.btn_acc_x.UseVisualStyleBackColor = true;
+            this.btn_acc_x.UseVisualStyleBackColor = false;
             this.btn_acc_x.Click += new System.EventHandler(this.btn_acc_x_Click);
             // 
             // txb_acc_pass

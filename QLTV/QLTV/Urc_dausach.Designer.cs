@@ -54,6 +54,7 @@
             this.btn_ds_tkt = new System.Windows.Forms.Button();
             this.txb_ds_tk = new System.Windows.Forms.TextBox();
             this.panel_ds1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnl_ds2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_ds)).BeginInit();
             this.pnl_ds3.SuspendLayout();
@@ -74,9 +75,6 @@
             this.panel_ds1.Controls.Add(this.txb_ds_nxb);
             this.panel_ds1.Controls.Add(this.txb_ds_lv);
             this.panel_ds1.Controls.Add(this.txb_ds_tds);
-            this.panel_ds1.Controls.Add(this.btn_ds_s);
-            this.panel_ds1.Controls.Add(this.btn_ds_x);
-            this.panel_ds1.Controls.Add(this.btn_ds_t);
             this.panel_ds1.Controls.Add(this.txb_ds_mds);
             this.panel_ds1.Controls.Add(this.label1);
             this.panel_ds1.Controls.Add(this.panel1);
@@ -178,38 +176,41 @@
             // 
             // btn_ds_s
             // 
+            this.btn_ds_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_ds_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_s.Image")));
-            this.btn_ds_s.Location = new System.Drawing.Point(161, 444);
+            this.btn_ds_s.Location = new System.Drawing.Point(138, 406);
             this.btn_ds_s.Name = "btn_ds_s";
             this.btn_ds_s.Size = new System.Drawing.Size(75, 72);
             this.btn_ds_s.TabIndex = 8;
             this.btn_ds_s.Text = "Sửa";
             this.btn_ds_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ds_s.UseVisualStyleBackColor = true;
+            this.btn_ds_s.UseVisualStyleBackColor = false;
             this.btn_ds_s.Click += new System.EventHandler(this.btn_ds_s_Click);
             // 
             // btn_ds_x
             // 
+            this.btn_ds_x.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_ds_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_x.Image")));
-            this.btn_ds_x.Location = new System.Drawing.Point(280, 444);
+            this.btn_ds_x.Location = new System.Drawing.Point(257, 406);
             this.btn_ds_x.Name = "btn_ds_x";
             this.btn_ds_x.Size = new System.Drawing.Size(75, 72);
             this.btn_ds_x.TabIndex = 9;
             this.btn_ds_x.Text = "Xóa";
             this.btn_ds_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ds_x.UseVisualStyleBackColor = true;
+            this.btn_ds_x.UseVisualStyleBackColor = false;
             this.btn_ds_x.Click += new System.EventHandler(this.btn_ds_x_Click);
             // 
             // btn_ds_t
             // 
+            this.btn_ds_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_ds_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_t.Image")));
-            this.btn_ds_t.Location = new System.Drawing.Point(39, 444);
+            this.btn_ds_t.Location = new System.Drawing.Point(16, 406);
             this.btn_ds_t.Name = "btn_ds_t";
             this.btn_ds_t.Size = new System.Drawing.Size(75, 72);
             this.btn_ds_t.TabIndex = 7;
             this.btn_ds_t.Text = "Thêm";
             this.btn_ds_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ds_t.UseVisualStyleBackColor = true;
+            this.btn_ds_t.UseVisualStyleBackColor = false;
             this.btn_ds_t.Click += new System.EventHandler(this.btn_ds_t_Click);
             // 
             // txb_ds_mds
@@ -235,6 +236,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.btn_ds_t);
+            this.panel1.Controls.Add(this.btn_ds_s);
+            this.panel1.Controls.Add(this.btn_ds_x);
             this.panel1.Location = new System.Drawing.Point(23, 38);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(347, 525);
@@ -309,6 +313,7 @@
             this.Load += new System.EventHandler(this.Urc_dausach_Load);
             this.panel_ds1.ResumeLayout(false);
             this.panel_ds1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.pnl_ds2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgw_ds)).EndInit();
             this.pnl_ds3.ResumeLayout(false);

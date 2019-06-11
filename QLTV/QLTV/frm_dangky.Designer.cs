@@ -62,6 +62,7 @@
             // 
             // btn_acc_t
             // 
+            this.btn_acc_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_acc_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_acc_t.Image")));
             this.btn_acc_t.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_acc_t.Location = new System.Drawing.Point(438, 352);
@@ -69,7 +70,7 @@
             this.btn_acc_t.Size = new System.Drawing.Size(138, 59);
             this.btn_acc_t.TabIndex = 5;
             this.btn_acc_t.Text = "       Tạo tài khoản";
-            this.btn_acc_t.UseVisualStyleBackColor = true;
+            this.btn_acc_t.UseVisualStyleBackColor = false;
             this.btn_acc_t.Click += new System.EventHandler(this.btn_acc_t_Click);
             // 
             // txb_acc_pass

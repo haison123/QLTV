@@ -30,13 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_update_pm));
             this.btn_pm_update = new System.Windows.Forms.Button();
-            this.txb_pm_mdg = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txb_pm_nm = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txb_pm_mtt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txb_pm_mpm = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_pm_re = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
@@ -46,10 +43,14 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btn_pm_load = new System.Windows.Forms.Button();
             this.btn_pm_tra = new System.Windows.Forms.Button();
+            this.cbb_dg = new System.Windows.Forms.ComboBox();
+            this.cbb_tt = new System.Windows.Forms.ComboBox();
+            this.cbb_pm = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btn_pm_update
             // 
+            this.btn_pm_update.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_pm_update.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_update.Image")));
             this.btn_pm_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_pm_update.Location = new System.Drawing.Point(351, 344);
@@ -57,15 +58,8 @@
             this.btn_pm_update.Size = new System.Drawing.Size(94, 41);
             this.btn_pm_update.TabIndex = 25;
             this.btn_pm_update.Text = "          Sửa";
-            this.btn_pm_update.UseVisualStyleBackColor = true;
+            this.btn_pm_update.UseVisualStyleBackColor = false;
             this.btn_pm_update.Click += new System.EventHandler(this.btn_pm_update_Click);
-            // 
-            // txb_pm_mdg
-            // 
-            this.txb_pm_mdg.Location = new System.Drawing.Point(334, 318);
-            this.txb_pm_mdg.Name = "txb_pm_mdg";
-            this.txb_pm_mdg.Size = new System.Drawing.Size(132, 20);
-            this.txb_pm_mdg.TabIndex = 23;
             // 
             // label5
             // 
@@ -92,13 +86,6 @@
             this.label4.TabIndex = 30;
             this.label4.Text = "Ngày mượn  VD:02/11/2015";
             // 
-            // txb_pm_mtt
-            // 
-            this.txb_pm_mtt.Location = new System.Drawing.Point(334, 222);
-            this.txb_pm_mtt.Name = "txb_pm_mtt";
-            this.txb_pm_mtt.Size = new System.Drawing.Size(132, 20);
-            this.txb_pm_mtt.TabIndex = 20;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -107,14 +94,6 @@
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 29;
             this.label3.Text = "Mã thủ thư";
-            // 
-            // txb_pm_mpm
-            // 
-            this.txb_pm_mpm.Location = new System.Drawing.Point(334, 153);
-            this.txb_pm_mpm.Name = "txb_pm_mpm";
-            this.txb_pm_mpm.Size = new System.Drawing.Size(132, 20);
-            this.txb_pm_mpm.TabIndex = 18;
-            this.txb_pm_mpm.TextChanged += new System.EventHandler(this.txb_pm_mpm_TextChanged);
             // 
             // label2
             // 
@@ -194,6 +173,7 @@
             // 
             // btn_pm_tra
             // 
+            this.btn_pm_tra.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_pm_tra.Image = ((System.Drawing.Image)(resources.GetObject("btn_pm_tra.Image")));
             this.btn_pm_tra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_pm_tra.Location = new System.Drawing.Point(351, 391);
@@ -201,24 +181,48 @@
             this.btn_pm_tra.Size = new System.Drawing.Size(94, 41);
             this.btn_pm_tra.TabIndex = 33;
             this.btn_pm_tra.Text = "          Trả sách";
-            this.btn_pm_tra.UseVisualStyleBackColor = true;
+            this.btn_pm_tra.UseVisualStyleBackColor = false;
             this.btn_pm_tra.Click += new System.EventHandler(this.btn_pm_tra_Click);
+            // 
+            // cbb_dg
+            // 
+            this.cbb_dg.FormattingEnabled = true;
+            this.cbb_dg.Location = new System.Drawing.Point(334, 317);
+            this.cbb_dg.Name = "cbb_dg";
+            this.cbb_dg.Size = new System.Drawing.Size(132, 21);
+            this.cbb_dg.TabIndex = 34;
+            // 
+            // cbb_tt
+            // 
+            this.cbb_tt.FormattingEnabled = true;
+            this.cbb_tt.Location = new System.Drawing.Point(332, 222);
+            this.cbb_tt.Name = "cbb_tt";
+            this.cbb_tt.Size = new System.Drawing.Size(132, 21);
+            this.cbb_tt.TabIndex = 34;
+            // 
+            // cbb_pm
+            // 
+            this.cbb_pm.FormattingEnabled = true;
+            this.cbb_pm.Location = new System.Drawing.Point(332, 152);
+            this.cbb_pm.Name = "cbb_pm";
+            this.cbb_pm.Size = new System.Drawing.Size(132, 21);
+            this.cbb_pm.TabIndex = 34;
             // 
             // frm_update_pm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbb_pm);
+            this.Controls.Add(this.cbb_tt);
+            this.Controls.Add(this.cbb_dg);
             this.Controls.Add(this.btn_pm_tra);
             this.Controls.Add(this.btn_pm_load);
             this.Controls.Add(this.btn_pm_update);
-            this.Controls.Add(this.txb_pm_mdg);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txb_pm_nm);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txb_pm_mtt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txb_pm_mpm);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_pm_re);
             this.Controls.Add(this.listBox2);
@@ -238,13 +242,10 @@
         #endregion
 
         private System.Windows.Forms.Button btn_pm_update;
-        private System.Windows.Forms.TextBox txb_pm_mdg;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txb_pm_nm;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txb_pm_mtt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txb_pm_mpm;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_pm_re;
         private System.Windows.Forms.ListBox listBox2;
@@ -254,5 +255,8 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btn_pm_load;
         private System.Windows.Forms.Button btn_pm_tra;
+        private System.Windows.Forms.ComboBox cbb_dg;
+        private System.Windows.Forms.ComboBox cbb_tt;
+        private System.Windows.Forms.ComboBox cbb_pm;
     }
 }

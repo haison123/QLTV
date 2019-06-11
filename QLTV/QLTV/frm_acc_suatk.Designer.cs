@@ -58,6 +58,7 @@
             // 
             // btn_acc_s
             // 
+            this.btn_acc_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_acc_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_acc_s.Image")));
             this.btn_acc_s.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_acc_s.Location = new System.Drawing.Point(451, 303);
@@ -65,7 +66,7 @@
             this.btn_acc_s.Size = new System.Drawing.Size(125, 67);
             this.btn_acc_s.TabIndex = 5;
             this.btn_acc_s.Text = "         Sửa thông tin";
-            this.btn_acc_s.UseVisualStyleBackColor = true;
+            this.btn_acc_s.UseVisualStyleBackColor = false;
             this.btn_acc_s.Click += new System.EventHandler(this.btn_acc_t_Click);
             // 
             // txb_acc_pass

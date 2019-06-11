@@ -19,7 +19,8 @@ namespace QLTV
         sach_BUS s_BUS = new sach_BUS();
         phieumuon_BUS pm_bus = new phieumuon_BUS();
         ctpm_BUS ct_bus = new ctpm_BUS();
-        
+        docgia_BUS dg_bus = new docgia_BUS();
+        thuthu_BUS tt_bus = new thuthu_BUS();
         public frm_add_pm()
         {
             InitializeComponent();
@@ -30,6 +31,14 @@ namespace QLTV
             comboBox1.DataSource = ds_bus.getlist();
             comboBox1.DisplayMember = "TenDS";
             comboBox1.ValueMember = "TenDS";
+
+            cbb_dg.DataSource = dg_bus.getlist();
+            cbb_dg.DisplayMember = "TenDg";
+            cbb_dg.ValueMember = "MaDg";
+
+            cbb_tt.DataSource = tt_bus.getlist();
+            cbb_tt.DisplayMember = "TenTT";
+            cbb_tt.ValueMember = "MaTT";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -41,9 +50,9 @@ namespace QLTV
         {
             phieumuon_DTO pm = new phieumuon_DTO();
             pm.mapm = txb_pm_mpm.Text;
-            pm.matt = txb_pm_mtt.Text;
+            pm.matt = cbb_tt.SelectedValue.ToString();
             pm.ngaymuon = txb_pm_nm.Text;
-            pm.madg = txb_pm_mdg.Text;
+            pm.madg = cbb_dg.SelectedValue.ToString();
 
             int check = pm_bus.them(pm, pm.matt, pm.madg);
             try
@@ -83,9 +92,7 @@ namespace QLTV
             {
                 MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            txb_pm_mdg.Text = "";
             txb_pm_mpm.Text = "";
-            txb_pm_mtt.Text = "";
             txb_pm_nm.Text = "";
         }
 
