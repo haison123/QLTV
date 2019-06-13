@@ -41,12 +41,12 @@
             this.txb_ds_nxb = new System.Windows.Forms.TextBox();
             this.txb_ds_lv = new System.Windows.Forms.TextBox();
             this.txb_ds_tds = new System.Windows.Forms.TextBox();
-            this.btn_ds_s = new System.Windows.Forms.Button();
-            this.btn_ds_x = new System.Windows.Forms.Button();
-            this.btn_ds_t = new System.Windows.Forms.Button();
             this.txb_ds_mds = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_ds_t = new System.Windows.Forms.Button();
+            this.btn_ds_s = new System.Windows.Forms.Button();
+            this.btn_ds_x = new System.Windows.Forms.Button();
             this.btn_ds_tkm = new System.Windows.Forms.Button();
             this.pnl_ds2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dtgw_ds = new System.Windows.Forms.DataGridView();
@@ -174,6 +174,50 @@
             this.txb_ds_tds.Size = new System.Drawing.Size(216, 20);
             this.txb_ds_tds.TabIndex = 2;
             // 
+            // txb_ds_mds
+            // 
+            this.txb_ds_mds.Location = new System.Drawing.Point(139, 151);
+            this.txb_ds_mds.Name = "txb_ds_mds";
+            this.txb_ds_mds.Size = new System.Drawing.Size(216, 20);
+            this.txb_ds_mds.TabIndex = 1;
+            this.txb_ds_mds.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(42, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(302, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "QUẢN LÝ ĐẦU SÁCH";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.btn_ds_t);
+            this.panel1.Controls.Add(this.btn_ds_s);
+            this.panel1.Controls.Add(this.btn_ds_x);
+            this.panel1.Location = new System.Drawing.Point(23, 38);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(347, 525);
+            this.panel1.TabIndex = 17;
+            // 
+            // btn_ds_t
+            // 
+            this.btn_ds_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_ds_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_t.Image")));
+            this.btn_ds_t.Location = new System.Drawing.Point(16, 406);
+            this.btn_ds_t.Name = "btn_ds_t";
+            this.btn_ds_t.Size = new System.Drawing.Size(75, 72);
+            this.btn_ds_t.TabIndex = 7;
+            this.btn_ds_t.Text = "Thêm";
+            this.btn_ds_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ds_t.UseVisualStyleBackColor = false;
+            this.btn_ds_t.Click += new System.EventHandler(this.btn_ds_t_Click);
+            // 
             // btn_ds_s
             // 
             this.btn_ds_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -200,50 +244,6 @@
             this.btn_ds_x.UseVisualStyleBackColor = false;
             this.btn_ds_x.Click += new System.EventHandler(this.btn_ds_x_Click);
             // 
-            // btn_ds_t
-            // 
-            this.btn_ds_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ds_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_ds_t.Image")));
-            this.btn_ds_t.Location = new System.Drawing.Point(16, 406);
-            this.btn_ds_t.Name = "btn_ds_t";
-            this.btn_ds_t.Size = new System.Drawing.Size(75, 72);
-            this.btn_ds_t.TabIndex = 7;
-            this.btn_ds_t.Text = "Thêm";
-            this.btn_ds_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ds_t.UseVisualStyleBackColor = false;
-            this.btn_ds_t.Click += new System.EventHandler(this.btn_ds_t_Click);
-            // 
-            // txb_ds_mds
-            // 
-            this.txb_ds_mds.Location = new System.Drawing.Point(139, 151);
-            this.txb_ds_mds.Name = "txb_ds_mds";
-            this.txb_ds_mds.Size = new System.Drawing.Size(216, 20);
-            this.txb_ds_mds.TabIndex = 1;
-            this.txb_ds_mds.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(42, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "QUẢN LÝ ĐẦU SÁCH";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.btn_ds_t);
-            this.panel1.Controls.Add(this.btn_ds_s);
-            this.panel1.Controls.Add(this.btn_ds_x);
-            this.panel1.Location = new System.Drawing.Point(23, 38);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 525);
-            this.panel1.TabIndex = 17;
-            // 
             // btn_ds_tkm
             // 
             this.btn_ds_tkm.Location = new System.Drawing.Point(455, 24);
@@ -267,6 +267,7 @@
             // dtgw_ds
             // 
             this.dtgw_ds.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgw_ds.BackgroundColor = System.Drawing.Color.White;
             this.dtgw_ds.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgw_ds.Location = new System.Drawing.Point(3, 3);
             this.dtgw_ds.Name = "dtgw_ds";
@@ -276,6 +277,7 @@
             // 
             // pnl_ds3
             // 
+            this.pnl_ds3.BackColor = System.Drawing.Color.RoyalBlue;
             this.pnl_ds3.Controls.Add(this.btn_ds_tkt);
             this.pnl_ds3.Controls.Add(this.btn_ds_tkm);
             this.pnl_ds3.Controls.Add(this.txb_ds_tk);

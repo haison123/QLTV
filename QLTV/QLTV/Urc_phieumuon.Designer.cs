@@ -60,7 +60,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.btn_pm_x);
             this.panel1.Controls.Add(this.btn_pm_s);
             this.panel1.Controls.Add(this.label_pm1);
@@ -131,6 +131,7 @@
             // dtgw_pm
             // 
             this.dtgw_pm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgw_pm.BackgroundColor = System.Drawing.Color.White;
             this.dtgw_pm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgw_pm.Location = new System.Drawing.Point(3, 3);
             this.dtgw_pm.Name = "dtgw_pm";
@@ -164,6 +165,7 @@
             // 
             // pnl_ds3
             // 
+            this.pnl_ds3.BackColor = System.Drawing.Color.RoyalBlue;
             this.pnl_ds3.Controls.Add(this.btn_pm_ct);
             this.pnl_ds3.Controls.Add(this.btn_pm_tk);
             this.pnl_ds3.Controls.Add(this.txb_pm_tk);

@@ -10,7 +10,7 @@ namespace QLTV_DAL
 {
     public class connect_DAL
     {
-        static string provider = @"Data Source=DESKTOP-K9B9VR3\SQLEXPRESS;Initial Catalog=QL_library;Integrated Security=True";
+        static string provider = @"Data Source=.\SQLEXPRE;Initial Catalog=QL_library;Integrated Security=True";
         SqlConnection connect = new SqlConnection(provider);
 
         public DataTable getdata(string sql)

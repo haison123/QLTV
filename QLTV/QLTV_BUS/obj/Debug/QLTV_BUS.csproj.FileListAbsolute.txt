@@ -9,3 +9,14 @@ C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.csprojAssemblyRefere
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.csproj.CopyComplete
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.dll
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\bin\Debug\QLTV_BUS.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\bin\Debug\QLTV_BUS.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\bin\Debug\QLTV_DAL.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\bin\Debug\QLTV_DTO.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\bin\Debug\QLTV_DAL.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\bin\Debug\QLTV_DTO.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.csprojAssemblyReference.cache
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.csproj.CoreCompileInputs.cache
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.csproj.CopyComplete
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_BUS\obj\Debug\QLTV_BUS.pdb

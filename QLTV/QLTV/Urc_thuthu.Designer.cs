@@ -39,12 +39,12 @@
             this.txb_tt_gt = new System.Windows.Forms.TextBox();
             this.txb_tt_dc = new System.Windows.Forms.TextBox();
             this.txb_tt_ttt = new System.Windows.Forms.TextBox();
-            this.btn_tt_s = new System.Windows.Forms.Button();
-            this.btn_tt_x = new System.Windows.Forms.Button();
-            this.btn_tt_t = new System.Windows.Forms.Button();
             this.txb_tt_mtt = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_tt_x = new System.Windows.Forms.Button();
+            this.btn_tt_s = new System.Windows.Forms.Button();
+            this.btn_tt_t = new System.Windows.Forms.Button();
             this.pnl_ds2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dtgw_tt = new System.Windows.Forms.DataGridView();
             this.pnl_ds3 = new System.Windows.Forms.Panel();
@@ -152,45 +152,6 @@
             this.txb_tt_ttt.Size = new System.Drawing.Size(216, 20);
             this.txb_tt_ttt.TabIndex = 2;
             // 
-            // btn_tt_s
-            // 
-            this.btn_tt_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_tt_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_s.Image")));
-            this.btn_tt_s.Location = new System.Drawing.Point(133, 385);
-            this.btn_tt_s.Name = "btn_tt_s";
-            this.btn_tt_s.Size = new System.Drawing.Size(75, 72);
-            this.btn_tt_s.TabIndex = 8;
-            this.btn_tt_s.Text = "Sửa";
-            this.btn_tt_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_tt_s.UseVisualStyleBackColor = false;
-            this.btn_tt_s.Click += new System.EventHandler(this.btn_tt_s_Click);
-            // 
-            // btn_tt_x
-            // 
-            this.btn_tt_x.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_tt_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_x.Image")));
-            this.btn_tt_x.Location = new System.Drawing.Point(254, 385);
-            this.btn_tt_x.Name = "btn_tt_x";
-            this.btn_tt_x.Size = new System.Drawing.Size(75, 72);
-            this.btn_tt_x.TabIndex = 9;
-            this.btn_tt_x.Text = "Xóa";
-            this.btn_tt_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_tt_x.UseVisualStyleBackColor = false;
-            this.btn_tt_x.Click += new System.EventHandler(this.btn_tt_x_Click);
-            // 
-            // btn_tt_t
-            // 
-            this.btn_tt_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_tt_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_t.Image")));
-            this.btn_tt_t.Location = new System.Drawing.Point(13, 385);
-            this.btn_tt_t.Name = "btn_tt_t";
-            this.btn_tt_t.Size = new System.Drawing.Size(75, 72);
-            this.btn_tt_t.TabIndex = 7;
-            this.btn_tt_t.Text = "Thêm";
-            this.btn_tt_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_tt_t.UseVisualStyleBackColor = false;
-            this.btn_tt_t.Click += new System.EventHandler(this.btn_tt_t_Click);
-            // 
             // txb_tt_mtt
             // 
             this.txb_tt_mtt.Location = new System.Drawing.Point(139, 151);
@@ -200,7 +161,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btn_tt_x);
             this.panel1.Controls.Add(this.btn_tt_s);
@@ -221,6 +182,45 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ THỦ THƯ";
             // 
+            // btn_tt_x
+            // 
+            this.btn_tt_x.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_tt_x.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_x.Image")));
+            this.btn_tt_x.Location = new System.Drawing.Point(254, 385);
+            this.btn_tt_x.Name = "btn_tt_x";
+            this.btn_tt_x.Size = new System.Drawing.Size(75, 72);
+            this.btn_tt_x.TabIndex = 9;
+            this.btn_tt_x.Text = "Xóa";
+            this.btn_tt_x.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_tt_x.UseVisualStyleBackColor = false;
+            this.btn_tt_x.Click += new System.EventHandler(this.btn_tt_x_Click);
+            // 
+            // btn_tt_s
+            // 
+            this.btn_tt_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_tt_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_s.Image")));
+            this.btn_tt_s.Location = new System.Drawing.Point(133, 385);
+            this.btn_tt_s.Name = "btn_tt_s";
+            this.btn_tt_s.Size = new System.Drawing.Size(75, 72);
+            this.btn_tt_s.TabIndex = 8;
+            this.btn_tt_s.Text = "Sửa";
+            this.btn_tt_s.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_tt_s.UseVisualStyleBackColor = false;
+            this.btn_tt_s.Click += new System.EventHandler(this.btn_tt_s_Click);
+            // 
+            // btn_tt_t
+            // 
+            this.btn_tt_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_tt_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_tt_t.Image")));
+            this.btn_tt_t.Location = new System.Drawing.Point(13, 385);
+            this.btn_tt_t.Name = "btn_tt_t";
+            this.btn_tt_t.Size = new System.Drawing.Size(75, 72);
+            this.btn_tt_t.TabIndex = 7;
+            this.btn_tt_t.Text = "Thêm";
+            this.btn_tt_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_tt_t.UseVisualStyleBackColor = false;
+            this.btn_tt_t.Click += new System.EventHandler(this.btn_tt_t_Click);
+            // 
             // pnl_ds2
             // 
             this.pnl_ds2.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -233,6 +233,7 @@
             // dtgw_tt
             // 
             this.dtgw_tt.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgw_tt.BackgroundColor = System.Drawing.Color.White;
             this.dtgw_tt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgw_tt.Location = new System.Drawing.Point(3, 3);
             this.dtgw_tt.Name = "dtgw_tt";
@@ -241,6 +242,7 @@
             // 
             // pnl_ds3
             // 
+            this.pnl_ds3.BackColor = System.Drawing.Color.RoyalBlue;
             this.pnl_ds3.Controls.Add(this.btn_tt_tkt);
             this.pnl_ds3.Controls.Add(this.btn_tt_tkm);
             this.pnl_ds3.Controls.Add(this.txb_tt_tk);

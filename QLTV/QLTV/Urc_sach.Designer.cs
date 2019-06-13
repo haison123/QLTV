@@ -36,11 +36,11 @@
             this.label_s2 = new System.Windows.Forms.Label();
             this.txb_s_tt = new System.Windows.Forms.TextBox();
             this.txb_s_ms = new System.Windows.Forms.TextBox();
-            this.btn_s_s = new System.Windows.Forms.Button();
-            this.btn_s_x = new System.Windows.Forms.Button();
-            this.btn_s_t = new System.Windows.Forms.Button();
             this.label_s1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_s_t = new System.Windows.Forms.Button();
+            this.btn_s_s = new System.Windows.Forms.Button();
+            this.btn_s_x = new System.Windows.Forms.Button();
             this.pnl_s2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dtgw_s = new System.Windows.Forms.DataGridView();
             this.pnl_ds3 = new System.Windows.Forms.Panel();
@@ -120,6 +120,41 @@
             this.txb_s_ms.Size = new System.Drawing.Size(216, 20);
             this.txb_s_ms.TabIndex = 2;
             // 
+            // label_s1
+            // 
+            this.label_s1.AutoSize = true;
+            this.label_s1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_s1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_s1.Location = new System.Drawing.Point(84, 65);
+            this.label_s1.Name = "label_s1";
+            this.label_s1.Size = new System.Drawing.Size(233, 32);
+            this.label_s1.TabIndex = 0;
+            this.label_s1.Text = "QUẢN LÝ SÁCH";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.btn_s_t);
+            this.panel1.Controls.Add(this.btn_s_s);
+            this.panel1.Controls.Add(this.btn_s_x);
+            this.panel1.Location = new System.Drawing.Point(23, 43);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(349, 512);
+            this.panel1.TabIndex = 15;
+            // 
+            // btn_s_t
+            // 
+            this.btn_s_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_s_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_t.Image")));
+            this.btn_s_t.Location = new System.Drawing.Point(16, 412);
+            this.btn_s_t.Name = "btn_s_t";
+            this.btn_s_t.Size = new System.Drawing.Size(75, 72);
+            this.btn_s_t.TabIndex = 5;
+            this.btn_s_t.Text = "Thêm";
+            this.btn_s_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_s_t.UseVisualStyleBackColor = false;
+            this.btn_s_t.Click += new System.EventHandler(this.btn_s_t_Click);
+            // 
             // btn_s_s
             // 
             this.btn_s_s.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -146,41 +181,6 @@
             this.btn_s_x.UseVisualStyleBackColor = false;
             this.btn_s_x.Click += new System.EventHandler(this.btn_s_x_Click);
             // 
-            // btn_s_t
-            // 
-            this.btn_s_t.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_s_t.Image = ((System.Drawing.Image)(resources.GetObject("btn_s_t.Image")));
-            this.btn_s_t.Location = new System.Drawing.Point(16, 412);
-            this.btn_s_t.Name = "btn_s_t";
-            this.btn_s_t.Size = new System.Drawing.Size(75, 72);
-            this.btn_s_t.TabIndex = 5;
-            this.btn_s_t.Text = "Thêm";
-            this.btn_s_t.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_s_t.UseVisualStyleBackColor = false;
-            this.btn_s_t.Click += new System.EventHandler(this.btn_s_t_Click);
-            // 
-            // label_s1
-            // 
-            this.label_s1.AutoSize = true;
-            this.label_s1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label_s1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_s1.Location = new System.Drawing.Point(84, 65);
-            this.label_s1.Name = "label_s1";
-            this.label_s1.Size = new System.Drawing.Size(233, 32);
-            this.label_s1.TabIndex = 0;
-            this.label_s1.Text = "QUẢN LÝ SÁCH";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.btn_s_t);
-            this.panel1.Controls.Add(this.btn_s_s);
-            this.panel1.Controls.Add(this.btn_s_x);
-            this.panel1.Location = new System.Drawing.Point(23, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(349, 512);
-            this.panel1.TabIndex = 15;
-            // 
             // pnl_s2
             // 
             this.pnl_s2.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -193,6 +193,7 @@
             // dtgw_s
             // 
             this.dtgw_s.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgw_s.BackgroundColor = System.Drawing.Color.White;
             this.dtgw_s.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgw_s.Location = new System.Drawing.Point(3, 3);
             this.dtgw_s.Name = "dtgw_s";
@@ -201,6 +202,7 @@
             // 
             // pnl_ds3
             // 
+            this.pnl_ds3.BackColor = System.Drawing.Color.RoyalBlue;
             this.pnl_ds3.Controls.Add(this.btn_s_tkt);
             this.pnl_ds3.Controls.Add(this.btn_s_tkm);
             this.pnl_ds3.Controls.Add(this.txb_s_tk);

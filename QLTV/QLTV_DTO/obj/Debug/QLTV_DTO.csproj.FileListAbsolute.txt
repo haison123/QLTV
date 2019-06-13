@@ -4,3 +4,9 @@ C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.csprojAssemblyRefere
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.csproj.CoreCompileInputs.cache
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.dll
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_DTO\bin\Debug\QLTV_DTO.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_DTO\bin\Debug\QLTV_DTO.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.csprojAssemblyReference.cache
+F:\QuanLyKho\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.csproj.CoreCompileInputs.cache
+F:\QuanLyKho\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_DTO\obj\Debug\QLTV_DTO.pdb

@@ -7,3 +7,12 @@ C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DTO.pdb
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.csproj.CopyComplete
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.dll
 C:\Users\Dell\Desktop\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DAL.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DAL.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DTO.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\bin\Debug\QLTV_DTO.pdb
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.csprojAssemblyReference.cache
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.csproj.CoreCompileInputs.cache
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.csproj.CopyComplete
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.dll
+F:\QuanLyKho\QLTV\QLTV\QLTV_DAL\obj\Debug\QLTV_DAL.pdb

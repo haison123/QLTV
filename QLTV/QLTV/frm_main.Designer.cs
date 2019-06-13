@@ -100,9 +100,9 @@
             // 
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.CaptionVisible = true;
+            this.ribbonControl1.Controls.Add(this.ribbonPanel7);
             this.ribbonControl1.Controls.Add(this.ribbonPanel6);
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel7);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -163,6 +163,7 @@
             // 
             this.ribbonPanel6.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel6.TabIndex = 4;
+            this.ribbonPanel6.Visible = false;
             // 
             // ribbonBar4
             // 
@@ -565,7 +566,6 @@
             // 
             this.ribbonPanel7.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel7.TabIndex = 5;
-            this.ribbonPanel7.Visible = false;
             // 
             // ribbonBar25
             // 
@@ -1086,13 +1086,13 @@
             // 
             // ribbonTabItem2
             // 
-            this.ribbonTabItem2.Checked = true;
             this.ribbonTabItem2.Name = "ribbonTabItem2";
             this.ribbonTabItem2.Panel = this.ribbonPanel6;
             this.ribbonTabItem2.Text = "Quản lý";
             // 
             // ribbonTabItem3
             // 
+            this.ribbonTabItem3.Checked = true;
             this.ribbonTabItem3.Name = "ribbonTabItem3";
             this.ribbonTabItem3.Panel = this.ribbonPanel7;
             this.ribbonTabItem3.Text = "Trợ giúp";
@@ -1119,14 +1119,14 @@
             this.pal_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pal_main.Location = new System.Drawing.Point(5, 155);
             this.pal_main.Name = "pal_main";
-            this.pal_main.Size = new System.Drawing.Size(872, 225);
+            this.pal_main.Size = new System.Drawing.Size(872, 223);
             this.pal_main.TabIndex = 1;
             // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 382);
+            this.ClientSize = new System.Drawing.Size(882, 380);
             this.Controls.Add(this.pal_main);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
